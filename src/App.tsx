@@ -5,20 +5,6 @@ import CssBaseline from "@material-ui/core/CssBaseline";
 
 import Main from "./layouts/Main/Main";
 
-declare module "@material-ui/core/styles/createMuiTheme" {
-  // allow configuration using `createMuiTheme`
-  interface Theme {
-    colors: {
-      [key: string]: string;
-    };
-  }
-  interface ThemeOptions {
-    colors?: {
-      [key: string]: string;
-    };
-  }
-}
-
 function App() {
   const prefersDarkMode = useMediaQuery("(prefers-color-scheme: dark)");
 

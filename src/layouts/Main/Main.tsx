@@ -1,5 +1,5 @@
 import React from "react";
-import { makeStyles } from "@material-ui/core";
+import { makeStyles, Theme } from "@material-ui/core";
 import ComponentA from "../../components/ComponentA";
 import ComponentB from "../../components/ComponentB";
 import ComponentC from "../../components/ComponentC";
@@ -7,7 +7,7 @@ import ComponentD from "../../components/ComponentD";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles((theme: Theme) => ({
   app: {
     height: "100vh",
 
